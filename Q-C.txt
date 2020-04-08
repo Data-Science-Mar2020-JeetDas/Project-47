@@ -1,0 +1,87 @@
+
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+
+---------------------------------
+        Available country names : 
+-------------------------------
+                                                    Period
+Location                                                  
+Afghanistan                                             38
+Albania                                                 39
+Algeria                                                 38
+Andorra                                                 22
+Angola                                                  34
+Antigua and Barbuda                                     39
+Argentina                                               39
+Armenia                                                 27
+Australia                                               39
+Austria                                                 39
+Azerbaijan                                              27
+Bahamas                                                 39
+Bahrain                                                 39
+Bangladesh                                              38
+Barbados                                                39
+Belarus                                                 27
+Belgium                                                 39
+Belize                                                  39
+Benin                                                   34
+Bhutan                                                  39
+Bolivia (Plurinational State of)                        39
+Bosnia and Herzegovina                                  27
+Botswana                                                39
+Brazil                                                  39
+Brunei Darussalam                                       39
+Bulgaria                                                39
+Burkina Faso                                            34
+Burundi                                                 38
+Cabo Verde                                              36
+Cambodia                                                35
+                                                   ...
+Suriname                                                39
+Sweden                                                  39
+Switzerland                                             33
+Syrian Arab Republic                                    39
+Tajikistan                                              27
+Thailand                                                39
+The former Yugoslav Republic of Macedonia               26
+Timor-Leste                                             17
+Togo                                                    38
+Tonga                                                   39
+Trinidad and Tobago                                     39
+Tunisia                                                 36
+Turkey                                                  39
+Turkmenistan                                            27
+Tuvalu                                                  39
+Uganda                                                  38
+Ukraine                                                 27
+United Arab Emirates                                    39
+United Kingdom of Great Britain and Northern Ir...      39
+United Republic of Tanzania                             39
+United States of America                                39
+Uruguay                                                 39
+Uzbekistan                                              27
+Vanuatu                                                 37
+Venezuela (Bolivarian Republic of)                      39
+Viet Nam                                                36
+Yemen                                                   29
+Yemen Arab Republic (until 1990)                        10
+Zambia                                                  36
+Zimbabwe                                                38
+
+[198 rows x 1 columns]
+-------------------------------
+total no. of country =  198
+-----------------------------
+
