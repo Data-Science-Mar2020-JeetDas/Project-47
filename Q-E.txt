@@ -1,0 +1,25 @@
+
+# Question - E :Types of available indicators
+
+indicator = df.groupby(['Indicator'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable types of indicators : ")
+print("-------------------------------")
+print(indicator)
+print("-------------------------------")
+count = 0
+for row in range(len(indicator)): 
+        count = count+1
+print("total no. of indicators = ",count)        
+print("-----------------------------\n")
+
+---------------------------------
+        Available types of indicators : 
+-------------------------------
+                                                    Period
+Indicator                                                 
+Polio (Pol3) immunization coverage among 1-year...    6954
+-------------------------------
+total no. of indicators =  1
+-----------------------------
+
