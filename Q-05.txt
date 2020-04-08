@@ -1,0 +1,383 @@
+#******************* Question - :plot-4: 12-15 (2007-2010) :  ********************
+
+
+df1 = df[df.Period == 2007]
+print("\n\n--------------[ OUTPUT for 2007 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2008]
+print("\n\n--------------[ OUTPUT for 2008 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2009]
+print("\n\n--------------[ OUTPUT for 2009 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2010]
+print("\n\n--------------[ OUTPUT for 2010 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot ----------------------
+
+plt.title('Question - : slot-4 : 2007-2010')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(%) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 2007")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2008")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2009")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2010")
+
+plt.legend()
+plt.show()
+
+
+--------------[ OUTPUT for 2007 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+11                                          Afghanistan    2007             63
+49                                              Albania    2007             99
+88                                              Algeria    2007             95
+126                                             Andorra    2007             96
+148                                              Angola    2007             43
+182                                 Antigua and Barbuda    2007             98
+221                                           Argentina    2007             92
+260                                             Armenia    2007             90
+287                                           Australia    2007             92
+326                                             Austria    2007             85
+365                                          Azerbaijan    2007             81
+392                                             Bahamas    2007             95
+431                                             Bahrain    2007             97
+470                                          Bangladesh    2007             96
+508                                            Barbados    2007             93
+547                                             Belarus    2007             90
+574                                             Belgium    2007             99
+613                                              Belize    2007             97
+652                                               Benin    2007             82
+686                                              Bhutan    2007             93
+725                    Bolivia (Plurinational State of)    2007             85
+764                              Bosnia and Herzegovina    2007             95
+791                                            Botswana    2007             96
+830                                              Brazil    2007             99
+869                                   Brunei Darussalam    2007             95
+908                                            Bulgaria    2007             95
+947                                        Burkina Faso    2007             93
+981                                             Burundi    2007             93
+1019                                         Cabo Verde    2007             98
+1055                                           Cambodia    2007             82
+                                                ...     ...            ...
+5898                                 Sudan (until 2011)    2007             84
+5937                                           Suriname    2007             84
+5976                                             Sweden    2007             98
+6015                                        Switzerland    2007             94
+6048                               Syrian Arab Republic    2007             83
+6087                                         Tajikistan    2007             85
+6114                                           Thailand    2007             98
+6153          The former Yugoslav Republic of Macedonia    2007             96
+6179                                        Timor-Leste    2007             70
+6196                                               Togo    2007             72
+6234                                              Tonga    2007             88
+6273                                Trinidad and Tobago    2007             90
+6312                                            Tunisia    2007             98
+6348                                             Turkey    2007             96
+6387                                       Turkmenistan    2007             98
+6414                                             Tuvalu    2007             97
+6453                                             Uganda    2007             70
+6491                                            Ukraine    2007             98
+6518                               United Arab Emirates    2007             94
+6557  United Kingdom of Great Britain and Northern I...    2007             92
+6596                        United Republic of Tanzania    2007             88
+6635                           United States of America    2007             93
+6674                                            Uruguay    2007             94
+6713                                         Uzbekistan    2007             98
+6740                                            Vanuatu    2007             69
+6777                 Venezuela (Bolivarian Republic of)    2007             67
+6816                                           Viet Nam    2007             92
+6852                                              Yemen    2007             79
+6891                                             Zambia    2007             77
+6927                                           Zimbabwe    2007             73
+
+[193 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2008 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+10                                          Afghanistan    2008             64
+48                                              Albania    2008             99
+87                                              Algeria    2008             92
+125                                             Andorra    2008             99
+147                                              Angola    2008             36
+181                                 Antigua and Barbuda    2008             99
+220                                           Argentina    2008             94
+259                                             Armenia    2008             91
+286                                           Australia    2008             92
+325                                             Austria    2008             83
+364                                          Azerbaijan    2008             85
+391                                             Bahamas    2008             93
+430                                             Bahrain    2008             97
+469                                          Bangladesh    2008             96
+507                                            Barbados    2008             85
+546                                             Belarus    2008             98
+573                                             Belgium    2008             99
+612                                              Belize    2008             94
+651                                               Benin    2008             77
+685                                              Bhutan    2008             96
+724                    Bolivia (Plurinational State of)    2008             87
+763                              Bosnia and Herzegovina    2008             92
+790                                            Botswana    2008             96
+829                                              Brazil    2008             99
+868                                   Brunei Darussalam    2008             97
+907                                            Bulgaria    2008             96
+946                                        Burkina Faso    2008             92
+980                                             Burundi    2008             89
+1018                                         Cabo Verde    2008             99
+1054                                           Cambodia    2008             91
+                                                ...     ...            ...
+5897                                 Sudan (until 2011)    2008             85
+5936                                           Suriname    2008             85
+5975                                             Sweden    2008             98
+6014                                        Switzerland    2008             96
+6047                               Syrian Arab Republic    2008             83
+6086                                         Tajikistan    2008             87
+6113                                           Thailand    2008             99
+6152          The former Yugoslav Republic of Macedonia    2008             96
+6178                                        Timor-Leste    2008             79
+6195                                               Togo    2008             80
+6233                                              Tonga    2008             88
+6272                                Trinidad and Tobago    2008             91
+6311                                            Tunisia    2008             99
+6347                                             Turkey    2008             96
+6386                                       Turkmenistan    2008             96
+6413                                             Tuvalu    2008             99
+6452                                             Uganda    2008             69
+6490                                            Ukraine    2008             91
+6517                               United Arab Emirates    2008             94
+6556  United Kingdom of Great Britain and Northern I...    2008             92
+6595                        United Republic of Tanzania    2008             89
+6634                           United States of America    2008             94
+6673                                            Uruguay    2008             94
+6712                                         Uzbekistan    2008             98
+6739                                            Vanuatu    2008             70
+6776                 Venezuela (Bolivarian Republic of)    2008             76
+6815                                           Viet Nam    2008             93
+6851                                              Yemen    2008             78
+6890                                             Zambia    2008             90
+6926                                           Zimbabwe    2008             75
+
+[193 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2009 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+9                                           Afghanistan    2009             63
+47                                              Albania    2009             98
+86                                              Algeria    2009             94
+124                                             Andorra    2009             99
+146                                              Angola    2009             36
+180                                 Antigua and Barbuda    2009             98
+219                                           Argentina    2009             97
+258                                             Armenia    2009             94
+285                                           Australia    2009             92
+324                                             Austria    2009             83
+363                                          Azerbaijan    2009             84
+390                                             Bahamas    2009             97
+429                                             Bahrain    2009             97
+468                                          Bangladesh    2009             97
+506                                            Barbados    2009             93
+545                                             Belarus    2009             98
+572                                             Belgium    2009             98
+611                                              Belize    2009             98
+650                                               Benin    2009             80
+684                                              Bhutan    2009             93
+723                    Bolivia (Plurinational State of)    2009             92
+762                              Bosnia and Herzegovina    2009             90
+789                                            Botswana    2009             96
+828                                              Brazil    2009             99
+867                                   Brunei Darussalam    2009             99
+906                                            Bulgaria    2009             94
+945                                        Burkina Faso    2009             91
+979                                             Burundi    2009             96
+1017                                         Cabo Verde    2009             99
+1053                                           Cambodia    2009             95
+                                                ...     ...            ...
+5896                                 Sudan (until 2011)    2009             81
+5935                                           Suriname    2009             85
+5974                                             Sweden    2009             98
+6013                                        Switzerland    2009             96
+6046                               Syrian Arab Republic    2009             83
+6085                                         Tajikistan    2009             93
+6112                                           Thailand    2009             99
+6151          The former Yugoslav Republic of Macedonia    2009             96
+6177                                        Timor-Leste    2009             78
+6194                                               Togo    2009             78
+6232                                              Tonga    2009             86
+6271                                Trinidad and Tobago    2009             90
+6310                                            Tunisia    2009             99
+6346                                             Turkey    2009             96
+6385                                       Turkmenistan    2009             97
+6412                                             Tuvalu    2009             85
+6451                                             Uganda    2009             78
+6489                                            Ukraine    2009             74
+6516                               United Arab Emirates    2009             94
+6555  United Kingdom of Great Britain and Northern I...    2009             93
+6594                        United Republic of Tanzania    2009             88
+6633                           United States of America    2009             93
+6672                                            Uruguay    2009             95
+6711                                         Uzbekistan    2009             99
+6738                                            Vanuatu    2009             72
+6775                 Venezuela (Bolivarian Republic of)    2009             75
+6814                                           Viet Nam    2009             97
+6850                                              Yemen    2009             76
+6889                                             Zambia    2009             93
+6925                                           Zimbabwe    2009             69
+
+[193 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2010 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+8                                           Afghanistan    2010             66
+46                                              Albania    2010             99
+85                                              Algeria    2010             95
+123                                             Andorra    2010             99
+145                                              Angola    2010             56
+179                                 Antigua and Barbuda    2010             99
+218                                           Argentina    2010             95
+257                                             Armenia    2010             96
+284                                           Australia    2010             92
+323                                             Austria    2010             86
+362                                          Azerbaijan    2010             85
+389                                             Bahamas    2010             97
+428                                             Bahrain    2010             99
+467                                          Bangladesh    2010             94
+505                                            Barbados    2010             90
+544                                             Belarus    2010             99
+571                                             Belgium    2010             98
+610                                              Belize    2010             96
+649                                               Benin    2010             77
+683                                              Bhutan    2010             92
+722                    Bolivia (Plurinational State of)    2010             90
+761                              Bosnia and Herzegovina    2010             90
+788                                            Botswana    2010             96
+827                                              Brazil    2010             99
+866                                   Brunei Darussalam    2010             99
+905                                            Bulgaria    2010             94
+944                                        Burkina Faso    2010             90
+978                                             Burundi    2010             94
+1016                                         Cabo Verde    2010             99
+1052                                           Cambodia    2010             90
+                                                ...     ...            ...
+5895                                 Sudan (until 2011)    2010             90
+5934                                           Suriname    2010             96
+5973                                             Sweden    2010             98
+6012                                        Switzerland    2010             96
+6045                               Syrian Arab Republic    2010             83
+6084                                         Tajikistan    2010             95
+6111                                           Thailand    2010             99
+6150          The former Yugoslav Republic of Macedonia    2010             95
+6176                                        Timor-Leste    2010             72
+6193                                               Togo    2010             83
+6231                                              Tonga    2010             84
+6270                                Trinidad and Tobago    2010             91
+6309                                            Tunisia    2010             98
+6345                                             Turkey    2010             97
+6384                                       Turkmenistan    2010             96
+6411                                             Tuvalu    2010             89
+6450                                             Uganda    2010             79
+6488                                            Ukraine    2010             57
+6515                               United Arab Emirates    2010             94
+6554  United Kingdom of Great Britain and Northern I...    2010             94
+6593                        United Republic of Tanzania    2010             94
+6632                           United States of America    2010             93
+6671                                            Uruguay    2010             95
+6710                                         Uzbekistan    2010             99
+6737                                            Vanuatu    2010             74
+6774                 Venezuela (Bolivarian Republic of)    2010             74
+6813                                           Viet Nam    2010             94
+6849                                              Yemen    2010             77
+6888                                             Zambia    2010             80
+6924                                           Zimbabwe    2010             89
+
+[193 rows x 3 columns]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191 192]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191 192]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191 192]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191 192]
